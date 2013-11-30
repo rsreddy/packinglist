@@ -1,12 +1,13 @@
-window.Todos = Ember.Application.create();
-Todos.ApplicationAdapter = DS.FixtureAdapter.extend();
+window.App = Ember.Application.create();
 
-Todos.Router.map(function() {
-	this.resource('todos',{path:'/'});
+App.Router.map(function(){
+	this.resource('packinglist', { path: '/' });
 });
 
-Todos.TodosRoute = Ember.Route.extend({
-	model: function (){
-		return this.store.find('todo');
+App.PackinglistRoute = Ember.Route.extend({
+	model: function(){
+		console.log(packinglist);
+		return packinglist;
 	}
+
 });

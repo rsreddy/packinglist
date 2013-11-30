@@ -1,12 +1,4 @@
-Todos.Todo = DS.Model.extend({
-	name: DS.attr('string'),
-	category: DS.attr('string'),
-	title: DS.attr('string'),
-	quantity: DS.attr('string'),
-	isCompleted: DS.attr('boolean')
-});
-
-Todos.Todo.FIXTURES=[
+var packinglist=[
 {
 	id: 1,
 	name: 'Roshan',
@@ -44,7 +36,7 @@ Todos.Todo.FIXTURES=[
 	name: 'Roshan',
 	category: 'Underwear',
 	title: 'Wipes',
-	quantity: '2 Packs'
+	quantity: '2 Packs',
 	isCompleted: false
 },
 {
@@ -60,7 +52,7 @@ Todos.Todo.FIXTURES=[
 	name: 'Roshan',
 	category: 'Clothing',
 	title: 'Short Sleeves/Onesies',
-	quantity: '17/5'
+	quantity: '17/5',
 	isCompleted: false
 },
 {
@@ -68,7 +60,7 @@ Todos.Todo.FIXTURES=[
 	name: 'Roshan',
 	category: 'Clothing',
 	title: 'Long Sleeves',
-	quantity: '4'
+	quantity: '4',
 	isCompleted: false
 },
 {
@@ -437,5 +429,13 @@ Todos.Todo.FIXTURES=[
 	category: 'Bath',
 	title: 'Wash Cloths',
 	quantity: '5',
+	isCompleted: false
+},
+{
+	id: 55,
+	name: 'Reddy General',
+	category: 'Bath',
+	title: 'Bowl for tub',
+	quantity: '2',
 	isCompleted: false
 }]
